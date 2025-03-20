@@ -81,7 +81,7 @@ pipeline {
         }
         stage('Checkout Code') {
             steps {
-                git credentialsId: 'GITHUB', url: 'https://github.com/Sarthak221198/MERN-FullStack-Devops-Project.git'
+                git credentialsId: 'GITHUB', branch: 'main', url: 'https://github.com/Sarthak221198/MERN-FullStack-Devops-Project.git'
             }
         }
         stage('Update Deployment file') {
